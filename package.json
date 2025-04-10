@@ -5,7 +5,7 @@
   "type": "module",
   "main": "build/index.js",
   "bin": {
-    "location-mcp-server": "./build/index.js"
+    "location-mcp-server": "build/index.js"
   },
   "files": [
     "build",
