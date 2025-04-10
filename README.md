@@ -55,7 +55,7 @@ The server:
 - If you get permission errors, you may need to allow the app in System Preferences > Security & Privacy
 - Check that port 8080 is not being used by another application
 
-### Instructions
+## Instructions
 
 1. Use Xcode, build location-getter
 2. Inside Xcode, go to Product -> Show build folder in Finder
