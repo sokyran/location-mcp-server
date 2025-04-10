@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Background location usage -->
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>This app needs your location to provide coordinates via local API requests.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>This app needs your location to provide coordinates via local API requests.</string>
+    
+    <!-- Background processing capability -->
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>location</string>
+        <string>processing</string>
+    </array>
+    
+    <!-- Network access permission -->
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>This app needs to use your local network to serve location data via HTTP.</string>
+</dict>
+</plist>
