@@ -1,5 +1,5 @@
 {
-  "name": "location-mcp-server",
+  "name": "@sokyran/location-mcp-server",
   "version": "1.0.0",
   "description": "MCP server for getting location from local app",
   "type": "module",
