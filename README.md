@@ -10,13 +10,13 @@ An MCP (Model Context Protocol) server that provides location data from a local 
 ## Installation
 
 ```bash
-npm install -g location-mcp-server
+npm install -g @sokyran/location-mcp-server
 ```
 
 Or run it directly with npx:
 
 ```bash
-npx location-mcp-server
+npx @sokyran/location-mcp-server
 ```
 
 ## Usage with Claude Desktop
@@ -30,7 +30,7 @@ npx location-mcp-server
   "mcpServers": {
     "location": {
       "command": "npx",
-      "args": ["location-mcp-server"]
+      "args": ["@sokyran/location-mcp-server"]
     }
   }
 }
