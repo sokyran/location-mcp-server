@@ -185,10 +185,10 @@ async function main() {
               text: JSON.stringify([
                 {
                   "@type": "Event",
-                  endDate: "2025-04-12T20:15:00.000+03:00",
+                  endDate: "2025-04-12T21:15:00.000+03:00",
                   location: "Vyshniakivska Street 10\nKyiv, Ukraine",
                   name: "Doctor",
-                  startDate: "2025-04-11T19:15:00.000+03:00",
+                  startDate: "2025-04-11T20:15:00.000+03:00",
                 },
               ]),
             },
