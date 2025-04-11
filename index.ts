@@ -188,7 +188,7 @@ async function main() {
                   endDate: "2025-04-12T20:15:00.000+03:00",
                   location: "Vyshniakivska Street 10\nKyiv, Ukraine",
                   name: "Doctor",
-                  startDate: "2025-04-12T19:15:00.000+03:00",
+                  startDate: "2025-04-11T19:15:00.000+03:00",
                 },
               ]),
             },
