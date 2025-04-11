@@ -7,32 +7,32 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		5A1C70C12DA8146800988E6C /* location-getter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "location-getter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A1C70F22DA819F100988E6C /* location-getter-agent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "location-getter-agent.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		5A1C70D52DA814AC00988E6C /* Exceptions for "location-getter" folder in "location-getter" target */ = {
+		5A1C71052DA81A1100988E6C /* Exceptions for "location-getter-agent" folder in "location-getter-agent" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 5A1C70C02DA8146800988E6C /* location-getter */;
+			target = 5A1C70F12DA819F100988E6C /* location-getter-agent */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		5A1C70C32DA8146800988E6C /* location-getter */ = {
+		5A1C70F42DA819F100988E6C /* location-getter-agent */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				5A1C70D52DA814AC00988E6C /* Exceptions for "location-getter" folder in "location-getter" target */,
+				5A1C71052DA81A1100988E6C /* Exceptions for "location-getter-agent" folder in "location-getter-agent" target */,
 			);
-			path = "location-getter";
+			path = "location-getter-agent";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5A1C70BE2DA8146800988E6C /* Frameworks */ = {
+		5A1C70EF2DA819F100988E6C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,18 +42,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5A1C70B82DA8146800988E6C = {
+		5A1C70E92DA819F100988E6C = {
 			isa = PBXGroup;
 			children = (
-				5A1C70C32DA8146800988E6C /* location-getter */,
-				5A1C70C22DA8146800988E6C /* Products */,
+				5A1C70F42DA819F100988E6C /* location-getter-agent */,
+				5A1C70F32DA819F100988E6C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5A1C70C22DA8146800988E6C /* Products */ = {
+		5A1C70F32DA819F100988E6C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5A1C70C12DA8146800988E6C /* location-getter.app */,
+				5A1C70F22DA819F100988E6C /* location-getter-agent.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,64 +61,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5A1C70C02DA8146800988E6C /* location-getter */ = {
+		5A1C70F12DA819F100988E6C /* location-getter-agent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5A1C70D02DA8146A00988E6C /* Build configuration list for PBXNativeTarget "location-getter" */;
+			buildConfigurationList = 5A1C71012DA819F300988E6C /* Build configuration list for PBXNativeTarget "location-getter-agent" */;
 			buildPhases = (
-				5A1C70BD2DA8146800988E6C /* Sources */,
-				5A1C70BE2DA8146800988E6C /* Frameworks */,
-				5A1C70BF2DA8146800988E6C /* Resources */,
+				5A1C70EE2DA819F100988E6C /* Sources */,
+				5A1C70EF2DA819F100988E6C /* Frameworks */,
+				5A1C70F02DA819F100988E6C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				5A1C70C32DA8146800988E6C /* location-getter */,
+				5A1C70F42DA819F100988E6C /* location-getter-agent */,
 			);
-			name = "location-getter";
+			name = "location-getter-agent";
 			packageProductDependencies = (
 			);
-			productName = "location-getter";
-			productReference = 5A1C70C12DA8146800988E6C /* location-getter.app */;
+			productName = "location-getter-agent";
+			productReference = 5A1C70F22DA819F100988E6C /* location-getter-agent.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5A1C70B92DA8146800988E6C /* Project object */ = {
+		5A1C70EA2DA819F100988E6C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					5A1C70C02DA8146800988E6C = {
+					5A1C70F12DA819F100988E6C = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
 			};
-			buildConfigurationList = 5A1C70BC2DA8146800988E6C /* Build configuration list for PBXProject "location-getter" */;
+			buildConfigurationList = 5A1C70ED2DA819F100988E6C /* Build configuration list for PBXProject "location-getter-agent" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 5A1C70B82DA8146800988E6C;
+			mainGroup = 5A1C70E92DA819F100988E6C;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 5A1C70C22DA8146800988E6C /* Products */;
+			productRefGroup = 5A1C70F32DA819F100988E6C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5A1C70C02DA8146800988E6C /* location-getter */,
+				5A1C70F12DA819F100988E6C /* location-getter-agent */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5A1C70BF2DA8146800988E6C /* Resources */ = {
+		5A1C70F02DA819F100988E6C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -128,7 +128,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5A1C70BD2DA8146800988E6C /* Sources */ = {
+		5A1C70EE2DA819F100988E6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,7 +138,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		5A1C70CE2DA8146A00988E6C /* Debug */ = {
+		5A1C70FF2DA819F300988E6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -201,7 +201,7 @@
 			};
 			name = Debug;
 		};
-		5A1C70CF2DA8146A00988E6C /* Release */ = {
+		5A1C71002DA819F300988E6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -256,56 +256,66 @@
 			};
 			name = Release;
 		};
-		5A1C70D12DA8146A00988E6C /* Debug */ = {
+		5A1C71022DA819F300988E6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "location-getter/location_getter.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "location-getter-agent/location_getter_agent.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"location-getter/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"location-getter-agent/Preview Content\"";
 				DEVELOPMENT_TEAM = N387B8C8C3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "location-getter/Info.plist";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_FILE = "location-getter-agent/Info.plist";
+				INFOPLIST_KEY_LSBackgroundOnly = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025. All rights reserved.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs your location to provide location information via its HTTP server, even when in the background.";
+				INFOPLIST_KEY_NSLocationUsageDescription = "This app needs your location to provide location information via its HTTP server.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to provide location information via its HTTP server.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "sokyran.location-getter";
+				PRODUCT_BUNDLE_IDENTIFIER = "sokyran.location-getter-agent";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		5A1C70D22DA8146A00988E6C /* Release */ = {
+		5A1C71032DA819F300988E6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "location-getter/location-getterRelease.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "location-getter-agent/location_getter_agent.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"location-getter/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"location-getter-agent/Preview Content\"";
 				DEVELOPMENT_TEAM = N387B8C8C3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "location-getter/Info.plist";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_FILE = "location-getter-agent/Info.plist";
+				INFOPLIST_KEY_LSBackgroundOnly = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025. All rights reserved.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs your location to provide location information via its HTTP server, even when in the background.";
+				INFOPLIST_KEY_NSLocationUsageDescription = "This app needs your location to provide location information via its HTTP server.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to provide location information via its HTTP server.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "sokyran.location-getter";
+				PRODUCT_BUNDLE_IDENTIFIER = "sokyran.location-getter-agent";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -315,25 +325,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5A1C70BC2DA8146800988E6C /* Build configuration list for PBXProject "location-getter" */ = {
+		5A1C70ED2DA819F100988E6C /* Build configuration list for PBXProject "location-getter-agent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5A1C70CE2DA8146A00988E6C /* Debug */,
-				5A1C70CF2DA8146A00988E6C /* Release */,
+				5A1C70FF2DA819F300988E6C /* Debug */,
+				5A1C71002DA819F300988E6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A1C70D02DA8146A00988E6C /* Build configuration list for PBXNativeTarget "location-getter" */ = {
+		5A1C71012DA819F300988E6C /* Build configuration list for PBXNativeTarget "location-getter-agent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5A1C70D12DA8146A00988E6C /* Debug */,
-				5A1C70D22DA8146A00988E6C /* Release */,
+				5A1C71022DA819F300988E6C /* Debug */,
+				5A1C71032DA819F300988E6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5A1C70B92DA8146800988E6C /* Project object */;
+	rootObject = 5A1C70EA2DA819F100988E6C /* Project object */;
 }
