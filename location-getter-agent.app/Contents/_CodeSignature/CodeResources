@@ -19,7 +19,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			zsRNYreL0xIjk9xrrGIKKp6WE/o=
+			YkNIqUS/daDgvTnxOaCOC4A/m9U=
 			</data>
 			<key>requirement</key>
 			<string>identifier "location-getter-agent.debug" and anchor apple generic and certificate leaf[subject.CN] = "Apple Development: sokyran.yurii@icloud.com (5379P88LAP)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
