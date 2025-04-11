@@ -2,6 +2,7 @@
 
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import fetch from "node-fetch";
 import { exec } from "child_process";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -15,6 +16,9 @@ const LOCAL_APP_URL = "http://localhost:8080";
 const MAX_RETRY_ATTEMPTS = 30; // Maximum number of attempts to check if the app is ready
 const RETRY_DELAY = 2000; // Delay between retries in milliseconds
 const APP_NAME = "location-getter-agent.app";
+
+// Track the app process for proper cleanup
+let appProcess: { pid?: string } = {};
 
 /**
  * Start the macOS application
@@ -33,10 +37,43 @@ async function startMacOSApp(): Promise<void> {
         reject(error);
         return;
       }
-      console.error(`App launch command executed successfully`);
-      resolve();
+
+      // Find the app process ID for later termination
+      exec(
+        `ps -A | grep "${APP_NAME}" | grep -v grep | awk '{print $1}'`,
+        (err, stdout) => {
+          if (!err && stdout.trim()) {
+            appProcess.pid = stdout.trim();
+            console.error(`App launched with PID: ${appProcess.pid}`);
+          }
+          console.error(`App launch command executed successfully`);
+          resolve();
+        },
+      );
     });
   });
+}
+
+/**
+ * Kill the macOS application
+ */
+async function killMacOSApp(): Promise<void> {
+  if (appProcess.pid) {
+    console.error(`Terminating app with PID: ${appProcess.pid}`);
+    return new Promise((resolve) => {
+      exec(`pkill -P ${appProcess.pid} || kill ${appProcess.pid}`, () => {
+        appProcess = {};
+        resolve();
+      });
+    });
+  } else {
+    // Try to find and kill the app by name if we don't have the PID
+    return new Promise((resolve) => {
+      exec(`pkill -f "${APP_NAME}"`, () => {
+        resolve();
+      });
+    });
+  }
 }
 
 /**
@@ -64,8 +101,7 @@ async function waitForLocalApp(): Promise<void> {
         console.error(`Location app is ready (after ${attempt} attempts)`);
         return;
       }
-    } catch (error) {
-      console.log(error);
+    } catch (error: any) {
       // Intentionally catch and ignore the error - we'll retry
     }
 
@@ -80,9 +116,6 @@ async function waitForLocalApp(): Promise<void> {
   );
 }
 
-/**
- * Main function to setup and run the MCP server
- */
 async function main() {
   try {
     // Wait for the local app to be ready before starting the MCP server
@@ -140,6 +173,18 @@ async function main() {
       },
     );
 
+    // Set up process termination handlers
+    const cleanup = async () => {
+      console.error("Shutting down...");
+      await killMacOSApp();
+      process.exit(0);
+    };
+
+    // Handle various termination signals
+    process.on("SIGINT", cleanup);
+    process.on("SIGTERM", cleanup);
+    process.on("exit", cleanup);
+
     // Start the server with stdio transport
     console.error("Starting MCP Location Server...");
     const transport = new StdioServerTransport();
@@ -147,6 +192,7 @@ async function main() {
     console.error("MCP Location Server started successfully!");
   } catch (error: any) {
     console.error(`Failed to start MCP server: ${error.message}`);
+    await killMacOSApp();
     process.exit(1);
   }
 }
