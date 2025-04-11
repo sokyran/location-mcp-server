@@ -173,6 +173,30 @@ async function main() {
       },
     );
 
+    // Add the getCalendarEvents tool
+    server.tool(
+      "getCalendarEvents",
+      {}, // No parameters needed for this tool
+      async () => {
+        return {
+          content: [
+            {
+              type: "text",
+              text: JSON.stringify([
+                {
+                  "@type": "Event",
+                  endDate: "2025-04-12T20:15:00.000+03:00",
+                  location: "Vyshniakivska Street 10\nKyiv, Ukraine",
+                  name: "Doctor",
+                  startDate: "2025-04-12T19:15:00.000+03:00",
+                },
+              ]),
+            },
+          ],
+        };
+      },
+    );
+
     // Set up process termination handlers
     const cleanup = async () => {
       console.error("Shutting down...");
