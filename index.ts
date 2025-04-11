@@ -2,7 +2,6 @@
 
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-import fetch from "node-fetch";
 import { exec } from "child_process";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -66,6 +65,7 @@ async function waitForLocalApp(): Promise<void> {
         return;
       }
     } catch (error) {
+      console.log(error);
       // Intentionally catch and ignore the error - we'll retry
     }
 
